@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgrounds"
+    android:padding="10dp"
+    android:visibility="visible"
+    tools:context=".activities.EditOrShowContactDetails"
+    tools:layout_editor_absoluteX="-8dp"
+    tools:layout_editor_absoluteY="68dp">
+
+    <ImageView
+        android:id="@+id/iv_person_c_detail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/str_con_des_usr_img"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/tv_person_name_c_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_hamza" />
+
+    <TextView
+        android:id="@+id/tv_person_name_c_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_person_c_detail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_person_c_detail"
+        app:layout_constraintTop_toBottomOf="@+id/iv_person_c_detail"
+        tools:text="Display User Name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_person_c_detail"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/iv_person_c_detail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_person_name_c_detail"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/et_person_name_c_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="@string/str_hnt_name"
+                android:background="@drawable/et_rounded_corners"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/str_hnt_name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_phone_c_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:autofillHints="@string/str_hnt_phone"
+                android:background="@drawable/et_rounded_corners"
+                android:drawableStart="@drawable/ic_phone_small"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/str_hnt_phone"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:drawableTint="?attr/colorControlNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_person_name_c_detail" />
+
+            <EditText
+                android:id="@+id/et_email_c_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:autofillHints="@string/str_hnt_email"
+                android:background="@drawable/et_rounded_corners"
+                android:drawableStart="@drawable/ic_cam_small"
+                android:drawableTint="?attr/colorControlNormal"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/str_hnt_email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_phone_c_details" />
+
+            <EditText
+                android:id="@+id/et_address_c_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:autofillHints="@string/str_hnt_address"
+                android:background="@drawable/et_rounded_corners"
+                android:drawableStart="@drawable/ic_address"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/str_hnt_address"
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email_c_detail" />
+
+            <EditText
+                android:id="@+id/et_dob_c_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:autofillHints="@string/str_hnt_dob"
+                android:background="@drawable/et_rounded_corners"
+                android:drawableStart="@drawable/ic_dob"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/str_hnt_dob"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_edit_contact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_address_c_detail" />
+
+            <Button
+                android:id="@+id/btn_edit_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_btn_round"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Confirm Edit"
+                android:textColor="@color/backgrounds"
+                android:textStyle="bold"
+                android:tint="@android:color/darker_gray"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/cardView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_dob_c_detail"
+                tools:visibility="visible" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/et_dob_c_detail"
+                app:layout_constraintStart_toStartOf="@+id/et_dob_c_detail"
+                app:layout_constraintTop_toBottomOf="@+id/btn_edit_contact">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_back_c_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/ic_btn_round"
+                        android:contentDescription="@string/str_con_desc_back_btn"
+                        android:padding="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_call_c_detail"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_back"
+                        app:tint="@color/backgrounds" />
+
+                    <ImageView
+                        android:id="@+id/iv_call_c_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/ic_btn_round"
+                        android:contentDescription="@string/str_con_desc_call_btn"
+                        android:padding="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_cam_c_detail"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/iv_back_c_detail"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_phone"
+                        app:tint="@color/backgrounds" />
+
+                    <ImageView
+                        android:id="@+id/iv_cam_c_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/ic_btn_round"
+                        android:contentDescription="@string/str_con_desc_cam_btn"
+                        android:padding="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_edit_c_details"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/iv_call_c_detail"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_cam"
+                        app:tint="@color/backgrounds" />
+
+                    <ImageView
+                        android:id="@+id/iv_edit_c_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/ic_btn_round"
+                        android:contentDescription="@string/str_con_desc_edit_button"
+                        android:padding="5dp"
+                        app:tint="@color/backgrounds"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/iv_cam_c_detail"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_baseline_edit_24" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

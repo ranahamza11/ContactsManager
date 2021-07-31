@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contacts Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_hnt_name">Name</string>
+    <string name="str_hnt_phone">Phone</string>
+    <string name="str_hnt_email">Email</string>
+    <string name="str_hnt_address">Address</string>
+    <string name="str_hnt_dob">Date of Birth(dd/mm/yyyy)</string>
+    <string name="str_con_des_usr_img">User Image</string>
+    <string name="str_con_desc_edit_button">Edit button</string>
+    <string name="str_con_desc_cam_btn">Cam button</string>
+    <string name="str_con_desc_call_btn">Call button</string>
+    <string name="str_con_desc_back_btn">Back button</string>
+</resources>

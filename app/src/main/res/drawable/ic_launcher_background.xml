@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+
+
+    <solid android:color="#ec407a" />
+
+    <gradient
+        android:startColor="@color/colorAccent"
+        android:centerX="@android:integer/config_shortAnimTime"
+        android:centerColor="@color/colorPrimary"
+        android:endColor="@color/btn"
+        />
+
+    
+
+</shape>

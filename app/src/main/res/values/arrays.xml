@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>Muhammad Hamza Naeem</item>
+        <item>Muhammad Asad Naeem</item>
+        <item>Abdullah Naeem</item>
+        <item>Papa</item>
+        <item>Waleed Abdul Razzaq</item>
+        <item>Muhammad Faisal Ansari</item>
+        <item>Sir Rana Waqas</item>
+    </string-array>
+
+    <string-array name="phones">
+        <item>3324504469</item>
+        <item>3124657556</item>
+        <item>3104986787</item>
+        <item>3454379550</item>
+        <item>3088409433</item>
+        <item>3134837505</item>
+        <item>3344398837</item>
+    </string-array>
+
+    <string-array name="emails">
+        <item>drovisfrovis@gmail.com</item>
+        <item>asadnaeem123@gmail.com</item>
+        <item>abdullah123@gmail.com</item>
+        <item>muhammad.naeem66@yahoo.com</item>
+        <item>wkhanwaleed52@gmail.com</item>
+        <item>F2019266056@gmail.com</item>
+        <item>ranawaqas.pa@gmail.com</item>
+    </string-array>
+
+    <string-array name="addresses">
+        <item>Jinnah Colony Samnabad, Lahore</item>
+        <item>Jinnah Colony Samnabad, Lahore</item>
+        <item>Jinnah Colony Samnabad, Lahore</item>
+        <item>Jinnah Colony Samnabad, Lahore</item>
+        <item>House no A, Street No B, Lahore</item>
+        <item>House no A, Street No B, Lahore</item>
+        <item>House no A, Street No B, Wapda Town Lahore</item>
+    </string-array>
+
+    <string-array name="dobs">
+        <item>15/12/2000</item>
+        <item>11/10/1999</item>
+        <item>3/8/2008</item>
+        <item>15/3/1972</item>
+        <item>5/8/2001</item>
+        <item>6/3/2001</item>
+        <item>9/6/1990</item>
+    </string-array>
+
+    <string-array name="images">
+        <item>"hamza"</item>
+        <item>"asad"</item>
+        <item>"abdullah"</item>
+        <item>"naeem"</item>
+        <item>"waleed"</item>
+        <item>"faisal"</item>
+        <item>"waqas"</item>
+    </string-array>
+</resources>
